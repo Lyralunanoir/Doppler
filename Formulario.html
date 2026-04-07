@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario - Competencia de Programación</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f9f9f9;
+}
+h2 {
+  color: #333;
+}
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+input[type="text"], input[type="number"], textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.section {
+  margin-bottom: 20px;
+}
+.options {
+  margin-left: 20px;
+}
+.required {
+  color: red;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+button:hover {
+  background-color: #45a049;
+}
+</style>
+</head>
+<body>
+
+<form action="https://formspree.io/f/xdapbjwp" method="POST">
+  <h2>Formulario de inscripción - Competencia de Programación</h2>
+  <p>Completa los siguientes datos para registrar tu participación. <span class="required">*</span> Obligatorio.</p>
+
+  <label>Nombre completo: <span class="required">*</span></label>
+  <input type="text" name="nombre_completo" required>
+
+  <label>Edad: <span class="required">*</span></label>
+  <input type="number" name="edad" min="10" max="100" required>
+
+  <label>Municipio: <span class="required">*</span></label>
+  <input type="text" name="municipio" required>
+
+  <label>Teléfono o Correo: <span class="required">*</span></label>
+  <input type="text" name="telefono_correo" required>
+
+  <label>¿Cómo te informaste?</label>
+  <select name="info">
+    <option>Redes sociales</option>
+    <option>Escuela</option>
+    <option>Amigos</option>
+    <option>Radio</option>
+    <option>Otro</option>
+  </select>
+
+  <label>Lenguajes que conoces:</label>
+  <input type="text" name="lenguajes" placeholder="Ej: Python, Java, C++">
+
+  <label>Experiencia previa:</label>
+  <select name="experiencia">
+    <option>Ninguna</option>
+    <option>Básica</option>
+    <option>Intermedia</option>
+    <option>Avanzada</option>
+  </select>
+
+  <button type="submit">Enviar inscripción</button>
+</form>
+
+</body>
+</html>
