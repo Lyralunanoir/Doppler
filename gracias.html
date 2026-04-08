@@ -2,13 +2,15 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Gracias por tu inscripción</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracias - Doppler Blitz</title>
 <style>
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
   background-color: #f9f9f9;
+  padding: 20px;
 }
 h2 {
   color: #4CAF50;
@@ -16,23 +18,71 @@ h2 {
 p {
   font-size: 18px;
 }
-a {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.whatsapp-box {
+  background-color: #e8f5e9;
+  border: 2px solid #25D366;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-a:hover {
-  background-color: #45a049;
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+}
+.qr {
+  margin: 15px 0;
+}
+ul {
+  text-align: left;
+  display: inline-block;
+  margin: 10px 0;
+}
+li {
+  text-align: left;
+  margin: 5px 0;
 }
 </style>
 </head>
 <body>
-<h2>✅ ¡Gracias por el envío!</h2>
-<p>Tu inscripción se ha registrado correctamente.</p>
-<a href="formulario.html">Volver al formulario</a>
+
+<h2>✅ ¡Gracias por tu inscripción!</h2>
+<p>Tu registro se ha completado exitosamente.</p>
+
+<div class="whatsapp-box">
+  <h3>📱 ¡Únete a nuestro canal de WhatsApp!</h3>
+  <p><strong>Doppler Blitz</strong> - Cazadores de talento en programación</p>
+  <p>Allí encontrarás:</p>
+  <ul>
+    <li>📅 Fecha y hora exacta de la competencia</li>
+    <li>🎮 Detalles de la modalidad de enfrentamiento</li>
+    <li>💬 Respuesta a tus dudas en vivo</li>
+    <li>🏆 Anuncios importantes y recordatorios</li>
+  </ul>
+  <p>
+    <a class="btn-whatsapp" href="https://whatsapp.com/channel/0029VbCLJrr1CYoQXMnBpq3o" target="_blank">
+      🔗 Unirse al canal ahora
+    </a>
+  </p>
+  <p>O escanea este código QR desde WhatsApp:</p>
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://whatsapp.com/channel/0029VbCLJrr1CYoQXMnBpq3o" alt="Código QR del canal Doppler Blitz">
+  </div>
+  <p style="font-size: 14px; color: #555;">Te esperamos para que no te pierdas ningún detalle.</p>
+</div>
+
+<p><a href="https://lyralunanoir.github.io/Doppler/">← Volver al formulario de inscripción</a></p>
+
 </body>
 </html>
